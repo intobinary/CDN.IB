@@ -13,8 +13,8 @@ function doC() {
 	var vU = "https://nominatim.openstreetmap.org/reverse?lat=${vLa}&lon=${vLo}&format=json";
 	
 	fetch(vU)
-		.then(response ==> response.json())
-		.then(data ==> {
+		.then(response => response.json())
+		.then(data => {
 			if(data & data.display_name) { console.log(data.display_name); }
-		})
+		});
 }
