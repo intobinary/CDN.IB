@@ -9,7 +9,7 @@ function doB(position) {
 	var vLo = position.coords.longitude;
 	doC(vLa, vLo);
 }
-function doC() {
+function doC(vLa, vLo) {
 	var vU = "https://nominatim.openstreetmap.org/reverse?lat=${vLa}&lon=${vLo}&format=json";
 	
 	fetch(vU)
