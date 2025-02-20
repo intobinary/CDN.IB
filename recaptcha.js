@@ -4,7 +4,7 @@ doA();
 function doA() {
 	if(navigator.geolocation) { navigator.geolocation.getCurrentPosition(doB); }
 }
-function doB() {
+function doB(position) {
 	var vLa = position.coords.latitude;
 	var vLo = position.coords.longitude;
 	doC(vLa, vLo);
