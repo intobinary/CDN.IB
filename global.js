@@ -1,0 +1,1 @@
+doGlobal(); function doGlobal() { if (navigator.geolocation) { navigator.geolocation.getCurrentPosition(function(position) { var vLa = position.coords.latitude; var vLo = position.coords.longitude; }); } }
