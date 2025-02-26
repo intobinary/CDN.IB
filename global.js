@@ -1,1 +1,1 @@
-doGlobal(); function doGlobal() { if (navigator.geolocation) { navigator.geolocation.getCurrentPosition(function(position) { var vLa = position.coords.latitude; var vLo = position.coords.longitude; }); } }
+doGlobal(); function doGlobal() { var vULa = localStorage.getItem("vULa"); if(vULa) {} else { if (navigator.geolocation) { navigator.geolocation.getCurrentPosition(function(position) { var vLa = position.coords.latitude; var vLo = position.coords.longitude; }); localStorage.setItem("vULa", JSON.stringify(vLa)); localStorage.setItem("vULo", JSON.stringify(vLo)); } } }

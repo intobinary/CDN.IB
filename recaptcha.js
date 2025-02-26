@@ -3,17 +3,10 @@
 doA();
 function doA() {
 	var vULa = localStorage.getItem("vULa");
-	if(vULa) { alert(vULa); }
-	else {
-		if(navigator.geolocation) { navigator.geolocation.getCurrentPosition(doB, handleError); }
-	}
-}
-function handleError(e) {
-	console.log("ERROR IS: ", e);
+	if(vULa) {}
+	else { if(navigator.geolocation) { navigator.geolocation.getCurrentPosition(doB); } }
 }
 function doB(position) {
-	alert("HERE!");
-		
 	var vLa = position.coords.latitude;
 	var vLo = position.coords.longitude;
 	localStorage.setItem("vULa", JSON.stringify(vLa));
