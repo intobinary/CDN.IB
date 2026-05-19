@@ -18,7 +18,7 @@ function injectIBRIAD() {
     const IBRInewtag1 = document.createElement("img");
     IBRInewtag1.id = "IBRInewtag1";
 //    IBRInewtag1.src = "/storage/emulated/0/CODE/[Ads for IBRI]/inbuiltweb.png";
-    IBRInewtag1.src = "https://raw.githubusercontent.com/intobinary/CDN.IB/refs/heads/main/IBRIADs/brand_inbuiltweb.png";
+    IBRInewtag1.src = "https://cdn.jsdelivr.net/gh/intobinary/CDN.IB@main/IBRIADs/brand_inbuiltweb.png";
     IBRInewtag1.alt = "INBUILTWEB"
     IBRInewad.appendChild(IBRInewtag1);
     
