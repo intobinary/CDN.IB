@@ -54,6 +54,57 @@ function injectIBRIAD() {
     IBRInewstyle.textContent += "";
     IBRInewstyle.textContent += "";
     */
+    
+    const companies = [
+  {
+    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_inbuiltweb.png?v=1',
+    logoAlt: 'INBUILTWEB',
+    color: 'orange',
+    marquee: 'HOST WEB APPLICATIONS: php, python, node.js, ruby, perl, go, rust, c/c++, java, asp.net. GET UNLIMITED RESOURCES: cpu, ram, bandwidth, storage, domain.',
+    link: 'https://inbuiltweb.com',
+    linkText: 'Visit'
+  },
+  {
+    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_aqualizwater.png?v=1',
+    logoAlt: 'AQUALIZ WATER',
+    color: 'steelblue',
+    marquee: 'You can purchase AquaLiz dispenser machine. We can also supply water to your homes or offices. Whether renting or purchasing, all AquaLiz water dispenser is guaranteed for 12 months for inoperative compressor.',
+    link: 'https://aqualizwater.co.za',
+    linkText: 'Shop'
+  },
+  {
+    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_BENKISZN.png?v=1',
+    logoAlt: 'BENKISZN',
+    color: '#8b5cf6',
+    marquee: 'Master Matric. Survive Varsity. BenkiSzn transforms boring schoolwork into a high-stakes academic e-sport backed by a 6-month university readiness simulator.',
+    link: 'https://benkiszn.com',
+    linkText: 'Register'
+  }
+];
+
+// Pick random company
+const randomAd = companies[Math.floor(Math.random() * companies.length)];
+
+// Build the HTML with template literals
+const IBRIADdom = `
+  <article id="IBRInewad"><div class="CSSmidwrap">
+    <img id="IBRInewtag1" src="${randomAd.logo}" alt="${randomAd.logoAlt}" />
+
+    <marquee id="IBRInewtag2">${randomAd.marquee}</marquee>
+
+    <a id="IBRInewtag3" href="${randomAd.link}" target="_blank" style="background-color: ${randomAd.color};">${randomAd.linkText}</a>
+
+    <span id="IBRInewtag4">AD</span>
+  </div></article>
+`;
+
+    /*
+// Inject it
+document.body.insertAdjacentHTML('beforeend', IBRIADdom);
+    */
+    
+    
+    /*
     const IBRIADdom = `
     				<article id="IBRInewad"><div class="CSSmidwrap">
     								<img id="IBRInewtag1" src="https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_inbuiltweb.png?v=1" alt="INBUILTWEBT" />
@@ -65,13 +116,17 @@ function injectIBRIAD() {
     								<span id="IBRInewtag4">AD</a>
     				</div></article>
 				`;
+    */
 
+    
+    
 				document.body.insertAdjacentHTML('beforeend', IBRIADdom);
+    
     
     const IBRIADcss = `
     				#IBRInewad, #IBRInewad * { padding: 0; margin: 0; box-sizing: border-box; } a { color: black; text-decoration: none; }
     
-    				#IBRInewad, #IBRInewtag4 { background-color: #AAA; } #IBRInewtag3 { background-color: orange; }
+    				#IBRInewad, #IBRInewtag4 { background-color: #AAA; }
     
     				#IBRInewad { font-family: 'Arial', sans-serif; line-height: 1.5em; } #IBRInewtag4 { font-size: .75em; }
     
@@ -95,7 +150,7 @@ function injectIBRIAD() {
     
     .IBRIADhtml #IBRInewad { text-align: center !important; }
     .IBRIADhtml #IBRInewad .CSSmidwrap {
-    				width: 100%; max-width: 50em;
+    				width: 100%; max-width: em;
     				display: flex; margin-left: auto !important; margin-right: auto !important;
     }
 				`;
