@@ -75,7 +75,8 @@ function injectIBRIAD() {
     
     				#IBRInewad { font-family: 'Arial', sans-serif; line-height: 1.5em; } #IBRInewtag4 { font-size: .75em; }
     
-    				body { position: relative; }
+    				#IBRIADhtml body,
+								#IBRIADhtml #IBRInewad .CSSmidwrap { position: relative; }
     
     				#IBRInewad > div { display: flex; align-items: center; justify-content: center; } #IBRInewtag2 { flex: 1; }
     
@@ -93,9 +94,9 @@ function injectIBRIAD() {
     .IBRIADhtml body { padding-bottom: 4em !important; }
     
     .IBRIADhtml #IBRInewad { text-align: center !important; }
-    .IBRIADhtml .CSSmidwrap {
-    				width: 100%; max-width: 18em;
-    				display: block; margin-left: auto !important; margin-right: auto !important;
+    .IBRIADhtml #IBRInewad .CSSmidwrap {
+    				width: 100%; max-width: 50em;
+    				display: flex; margin-left: auto !important; margin-right: auto !important;
     }
 				`;
 
