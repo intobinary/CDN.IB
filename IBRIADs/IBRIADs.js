@@ -12,8 +12,10 @@ injectIBRIAD();
 
 /*** FUNCTIONS ***/
 function injectIBRIAD() {
+    /*
     const IBRInewad = document.createElement("article");
     IBRInewad.id = "IBRInewad";
+    IBRInewad.classList.add("CSSmidwrap");
 
     const IBRInewtag1 = document.createElement("img");
     IBRInewtag1.id = "IBRInewtag1";
@@ -39,6 +41,7 @@ function injectIBRIAD() {
     IBRInewtag4.id = "IBRInewtag4";
     IBRInewtag4.textContent = "AD";
     IBRInewad.appendChild(IBRInewtag4);
+    */
     
     /*
     const IBRInewstyle = document.createElement("style");
@@ -51,25 +54,49 @@ function injectIBRIAD() {
     IBRInewstyle.textContent += "";
     IBRInewstyle.textContent += "";
     */
+    const IBRIADdom = `
+    				<article id="IBRInewad"><div class="CSSmidwrap">
+    								<img id="IBRInewtag1" src="https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_inbuiltweb.png?v=1" alt="INBUILTWEBT" />
+    
+    								<marquee id="IBRInewtag2">HOST WEB APPLICATIONS: php, python, node.js, ruby, perl, go (golang), rust, c/c++, java, asp.net. GET UNLIMITED RESOURCES: cpu, ram, bandwidth, storage, domain.</marquee>
+    
+    								<a id="IBRInewtag3" href="https://inbuiltweb.com" target="_blank">Visit</a>
+    
+    								<span id="IBRInewtag4">AD</a>
+    				</div></article>
+				`;
+
+				document.body.insertAdjacentHTML('beforeend', IBRIADdom);
     
     const IBRIADcss = `
-    #IBRInewad, #IBRInewad * { padding: 0; margin: 0; box-sizing: border-box; } a { color: black; text-decoration: none; }
+    				#IBRInewad, #IBRInewad * { padding: 0; margin: 0; box-sizing: border-box; } a { color: black; text-decoration: none; }
     
-    #IBRInewad, #IBRInewtag4 { background-color: #AAA; } #IBRInewtag3 { background-color: orange; }
+    				#IBRInewad, #IBRInewtag4 { background-color: #AAA; } #IBRInewtag3 { background-color: orange; }
     
-    #IBRInewad { font-family: 'Arial', sans-serif; line-height: 1.5em; } #IBRInewtag4 { font-size: .75em; }
+    				#IBRInewad { font-family: 'Arial', sans-serif; line-height: 1.5em; } #IBRInewtag4 { font-size: .75em; }
     
-    body { position: relative; }
+    				body { position: relative; }
     
-    #IBRInewad { display: flex; align-items: center; justify-content: center; } #IBRInewtag2 { flex: 1; }
+    				#IBRInewad > div { display: flex; align-items: center; justify-content: center; } #IBRInewtag2 { flex: 1; }
     
-    #IBRInewtag3 { border-radius: 4px; } #IBRInewtag4 { border-radius: 4px 4px 0 0; }
+    				#IBRInewtag3 { border-radius: 4px; } #IBRInewtag4 { border-radius: 4px 4px 0 0; }
     
-    #IBRInewad { position: absolute; bottom: 0; left: 0; width: 100%; padding: 1em; } #IBRInewtag1 { width: auto; height: 1.5em; border-radius: 4px; } #IBRInewtag2 { margin: 0 1em } #IBRInewtag3 { padding: 0 0.5em; } #IBRInewtag4 { position: absolute; top: -1.5em; left: 0; display: inline-block; padding: 0 .5em; }
+    				#IBRInewad { position: absolute; bottom: 0; left: 0; width: 100%; padding: 1em; } #IBRInewtag1 { width: auto; height: 1.5em; border-radius: 4px; } #IBRInewtag2 { margin: 0 1em } #IBRInewtag3 { padding: 0 0.5em; } #IBRInewtag4 { position: absolute; top: -1.5em; left: 0; display: inline-block; padding: 0 .5em; }
     
-    @media screen and (max-width: 50em) { #IBRInewad { font-size: 14px; } } @media screen and (min-width: 50em) { #IBRInewad { font-size: 18px; } }
+    				@media screen and (max-width: 50em) {
+    								#IBRInewad { font-size: 18px; }
+    				}
+    				@media screen and (min-width: 50em) {
+    								#IBRInewad { font-size: 24px; }
+    				}
     
     .IBRIADhtml body { padding-bottom: 4em !important; }
+    
+    .IBRIADhtml #IBRInewad { text-align: center !important; }
+    .IBRIADhtml .CSSmidwrap {
+    				width: 100%; max-width: 18em;
+    				display: block; margin-left: auto !important; margin-right: auto !important;
+    }
 				`;
 
 				var IBRIADstyle = document.createElement('style');
@@ -83,5 +110,3 @@ function injectIBRIAD() {
     */
 }
 /*** END FUNCTIONS ***/
-
-
