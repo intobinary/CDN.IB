@@ -87,7 +87,7 @@ const randomAd = companies[Math.floor(Math.random() * companies.length)];
 
 // Build the HTML with template literals
 const IBRIADdom = `
-  <article id="IBRInewad"><div class="CSSmidwrap">
+  <a href="${randomAd.link}" id="IBRInewad"><div class="CSSmidwrap">
     <img id="IBRInewtag1" src="${randomAd.logo}" alt="${randomAd.logoAlt}" />
 
     <marquee id="IBRInewtag2">${randomAd.marquee}</marquee>
@@ -95,7 +95,7 @@ const IBRIADdom = `
     <a id="IBRInewtag3" href="${randomAd.link}" target="_blank" style="background-color: ${randomAd.color};">${randomAd.linkText}</a>
 
     <span id="IBRInewtag4">AD</span>
-  </div></article>
+  </div></a>
 `;
 
     /*
