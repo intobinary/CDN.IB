@@ -85,9 +85,6 @@ const IBRIADdom = `
     				width: 100%; max-width: em;
     				display: flex; margin-left: auto !important; margin-right: auto !important;
     }
-  
-.IBRIADhtml body #IBRInewad { display: block !important; }
-  .IBRIADhtml body #IBRInewad * { //position: relative; }
 				`;
 
   
