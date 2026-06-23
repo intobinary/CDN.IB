@@ -7,7 +7,7 @@ document.getElementById("changeColorButton").addEventListener("click", function(
 ***/
 
 /*** INITIALIZION ***/
-injectIBRIAD();
+//injectIBRIAD();
 /*** END INITIALIZATION ***/
 
 /*** FUNCTIONS ***/
