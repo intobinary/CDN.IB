@@ -12,49 +12,6 @@ injectIBRIAD();
 
 /*** FUNCTIONS ***/
 function injectIBRIAD() {
-    /*
-    const IBRInewad = document.createElement("article");
-    IBRInewad.id = "IBRInewad";
-    IBRInewad.classList.add("CSSmidwrap");
-
-    const IBRInewtag1 = document.createElement("img");
-    IBRInewtag1.id = "IBRInewtag1";
-//    IBRInewtag1.src = "/storage/emulated/0/CODE/[Ads for IBRI]/inbuiltweb.png";
-//    IBRInewtag1.src = "https://cdn.jsdelivr.net/gh/intobinary/CDN.IB@main/IBRIADs/brand_inbuiltweb.png";
-    IBRInewtag1.src = "https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_inbuiltweb.png?v=1";
-    IBRInewtag1.alt = "INBUILTWEB";
-    IBRInewad.appendChild(IBRInewtag1);
-    
-    const IBRInewtag2 = document.createElement("marquee");
-    IBRInewtag2.id = "IBRInewtag2";
-    IBRInewtag2.textContent = "HOST WEB APPLICATIONS: php, python, node.js, ruby, perl, go (golang), rust, c/c++, java, asp.net. GET UNLIMITED RESOURCES: cpu, ram, bandwidth, storage, domain.";
-    IBRInewad.appendChild(IBRInewtag2);
-    
-    const IBRInewtag3 = document.createElement("a");
-    IBRInewtag3.id = "IBRInewtag3";
-    IBRInewtag3.textContent = "Visit";
-    IBRInewtag3.href = "https://inbuiltweb.com";
-    IBRInewtag3.target = "_blank";
-    IBRInewad.appendChild(IBRInewtag3);
-    
-    const IBRInewtag4 = document.createElement("span");
-    IBRInewtag4.id = "IBRInewtag4";
-    IBRInewtag4.textContent = "AD";
-    IBRInewad.appendChild(IBRInewtag4);
-    */
-    
-    /*
-    const IBRInewstyle = document.createElement("style");
-    IBRInewstyle.textContent += "";
-    IBRInewstyle.textContent += "";
-    IBRInewstyle.textContent += "";
-    IBRInewstyle.textContent += "";
-    IBRInewstyle.textContent += "";
-    IBRInewstyle.textContent += "";
-    IBRInewstyle.textContent += "";
-    IBRInewstyle.textContent += "";
-    */
-    
     const companies = [
   {
     logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_inbuiltweb.png?v=1',
@@ -87,42 +44,17 @@ const randomAd = companies[Math.floor(Math.random() * companies.length)];
 
 // Build the HTML with template literals
 const IBRIADdom = `
-  <a href="${randomAd.link}" id="IBRInewad"><div class="CSSmidwrap">
-    <img id="IBRInewtag1" src="${randomAd.logo}" alt="${randomAd.logoAlt}" />
+  <div id="IBRInewad"><div class="CSSmidwrap">
+    <a href="${randomAd.link}"><img id="IBRInewtag1" src="${randomAd.logo}" alt="${randomAd.logoAlt}" /></a>
 
-    <marquee id="IBRInewtag2">${randomAd.marquee}</marquee>
+    <marquee id="IBRInewtag2"><a href="${randomAd.link}">${randomAd.marquee}</a></marquee>
 
     <a id="IBRInewtag3" href="${randomAd.link}" target="_blank" style="background-color: ${randomAd.color};">${randomAd.linkText}</a>
 
     <span id="IBRInewtag4">AD</span>
-  </div></a>
+  </div></div>
 `;
-
-    /*
-// Inject it
-document.body.insertAdjacentHTML('beforeend', IBRIADdom);
-    */
-    
-    
-    /*
-    const IBRIADdom = `
-    				<article id="IBRInewad"><div class="CSSmidwrap">
-    								<img id="IBRInewtag1" src="https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_inbuiltweb.png?v=1" alt="INBUILTWEBT" />
-    
-    								<marquee id="IBRInewtag2">HOST WEB APPLICATIONS: php, python, node.js, ruby, perl, go (golang), rust, c/c++, java, asp.net. GET UNLIMITED RESOURCES: cpu, ram, bandwidth, storage, domain.</marquee>
-    
-    								<a id="IBRInewtag3" href="https://inbuiltweb.com" target="_blank">Visit</a>
-    
-    								<span id="IBRInewtag4">AD</a>
-    				</div></article>
-				`;
-    */
-
-    
-    
-				document.body.insertAdjacentHTML('beforeend', IBRIADdom);
-    
-    
+  
     const IBRIADcss = `
     				#IBRInewad, #IBRInewad * { padding: 0; margin: 0; box-sizing: border-box; } a { color: black; text-decoration: none; }
     
@@ -153,16 +85,18 @@ document.body.insertAdjacentHTML('beforeend', IBRIADdom);
     				width: 100%; max-width: em;
     				display: flex; margin-left: auto !important; margin-right: auto !important;
     }
+  
+.IBRIADhtml body #IBRInewad { display: block !important; }
+  .IBRIADhtml body #IBRInewad * { //position: relative; }
 				`;
 
+  
+				document.body.insertAdjacentHTML('beforeend', IBRIADdom);
+  
 				var IBRIADstyle = document.createElement('style');
 				IBRIADstyle.textContent = IBRIADcss;
-				document.head.appendChild(IBRIADstyle);
-    
-    document.querySelector(".IBRIADhtml body").appendChild(IBRInewad);
-    /*
-    document.querySelector(".IBRIADhtml body").appendChild(IBRInewstyle);
-    document.querySelector(".IBRIADhtml body").style = "padding-bottom: 4em !important;";
-    */
+  		document.head.appendChild(IBRIADstyle);
+  
+//    document.querySelector(".IBRIADhtml body").appendChild(IBRInewad);
 }
 /*** END FUNCTIONS ***/
