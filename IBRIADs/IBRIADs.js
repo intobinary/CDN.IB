@@ -36,7 +36,15 @@ function injectIBRIAD() {
     marquee: 'Master Matric. Survive Varsity. BenkiSzn transforms boring schoolwork into a high-stakes academic e-sport backed by a 6-month university readiness simulator.',
     link: 'https://benkiszn.com',
     linkText: 'Register'
-  }
+  },
+  {
+    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_mamabio.png?v=1',
+    logoAlt: 'mamabio',
+    color: '#4A604D',
+    marquee: 'Somba pondu ya pete, bolingo ya mboka in a leaf.',
+    link: 'https://wa.me/+27644376036',
+    linkText: 'Whatsapp'
+  },
 ];
 
 // Pick random company
