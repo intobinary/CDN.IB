@@ -62,6 +62,7 @@ const IBRIADdom = `
     
     				#IBRInewad { font-family: 'Arial', sans-serif; line-height: 1.5em; } #IBRInewtag4 { font-size: .75em; }
     
+html, body { width: 100%; height: 100%; }
     				#IBRIADhtml body,
 								#IBRIADhtml #IBRInewad .CSSmidwrap { position: relative; }
     
