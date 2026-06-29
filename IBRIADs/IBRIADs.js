@@ -30,14 +30,6 @@ function injectIBRIAD() {
     linkText: 'Shop'
   },
   {
-    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_BENKISZN.png?v=1',
-    logoAlt: 'BENKISZN',
-    color: '#8b5cf6',
-    marquee: 'Master Matric. Survive Varsity. BenkiSzn transforms boring schoolwork into a high-stakes academic e-sport backed by a 6-month university readiness simulator.',
-    link: 'https://benkiszn.com',
-    linkText: 'Register'
-  },
-  {
     logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_mamabio.png?v=1',
     logoAlt: 'mamabio',
     color: '#4A604D',
@@ -45,6 +37,14 @@ function injectIBRIAD() {
     link: 'https://wa.me/+27644376036',
     linkText: 'Whatsapp'
   },
+  {
+    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_BENKISZN.png?v=1',
+    logoAlt: 'BENKISZN',
+    color: '#8b5cf6',
+    marquee: 'Master Matric. Survive Varsity. BenkiSzn transforms boring schoolwork into a high-stakes academic e-sport backed by a 6-month university readiness simulator.',
+    link: 'https://benkiszn.com',
+    linkText: 'Register'
+  }
 ];
 
 // Pick random company
