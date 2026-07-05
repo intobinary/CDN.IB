@@ -30,7 +30,7 @@ function injectIBRIAD() {
     linkText: 'Shop'
   },
   {
-    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_inbuiltweb.png?v=1',
+    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_mamabio.png?v=1',
     logoAlt: 'mamabio',
     color: '#4A604D',
     marquee: 'Somba pondu ya pete, bolingo ya mboka in a leaf.',
@@ -70,7 +70,7 @@ const IBRIADdom = `
     
     				#IBRInewad { font-family: 'Arial', sans-serif; line-height: 1.5em; } #IBRInewtag4 { font-size: .75em; }
     
-html, body { width: 100%; height: 100%; }
+html, body, main { width: 100%; height: 100%; }
     				#IBRIADhtml body,
 								#IBRIADhtml #IBRInewad .CSSmidwrap { position: relative; }
     
