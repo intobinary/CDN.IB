@@ -78,7 +78,7 @@ html, body, main { width: 100%; height: 100%; }
     
     				#IBRInewtag3 { border-radius: 4px; } #IBRInewtag4 { border-radius: 4px 4px 0 0; }
     
-    				#IBRInewad { position: absolute; bottom: 0; left: 0; width: 100%; padding: 1em; } #IBRInewtag1 { width: auto; height: 1.5em; border-radius: 4px; } #IBRInewtag2 { margin: 0 1em } #IBRInewtag3 { padding: 0 0.5em; } #IBRInewtag4 { position: absolute; top: -1.5em; left: 0; display: inline-block; padding: 0 .5em; }
+    				#IBRInewad { position: fixed; bottom: 0; left: 0; width: 100%; padding: 1em; } #IBRInewtag1 { width: auto; height: 1.5em; border-radius: 4px; } #IBRInewtag2 { margin: 0 1em } #IBRInewtag3 { padding: 0 0.5em; } #IBRInewtag4 { position: absolute; top: -1.5em; left: 0; display: inline-block; padding: 0 .5em; }
     
     				@media screen and (max-width: 50em) {
     								#IBRInewad { font-size: 18px; }
