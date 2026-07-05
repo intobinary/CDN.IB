@@ -14,7 +14,7 @@ injectIBRIAD();
 function injectIBRIAD() {
     const companies = [
   {
-    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_inbuiltweb.png?v=2',
+    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_inbuiltweb.png?v=1',
     logoAlt: 'INBUILTWEB',
     color: 'orange',
     marquee: 'HOST WEB APPLICATIONS: php, python, node.js, ruby, perl, go, rust, c/c++, java, asp.net. GET UNLIMITED RESOURCES: cpu, ram, bandwidth, storage, domain.',
@@ -30,7 +30,7 @@ function injectIBRIAD() {
     linkText: 'Shop'
   },
   {
-    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_pondu.png?v=1',
+    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_pondu.png?v=2',
     logoAlt: 'mamabio',
     color: '#4A604D',
     marquee: 'Somba pondu ya pete, bolingo ya mboka in a leaf.',
