@@ -30,7 +30,7 @@ function injectIBRIAD() {
     linkText: 'Shop'
   },
   {
-    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_mamabio.png?v=1',
+    logo: 'https://raw.githack.com/intobinary/CDN.IB/main/IBRIADs/brand_pondu.png?v=1',
     logoAlt: 'mamabio',
     color: '#4A604D',
     marquee: 'Somba pondu ya pete, bolingo ya mboka in a leaf.',
